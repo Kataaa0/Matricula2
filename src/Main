@@ -1,0 +1,59 @@
+public class Main {
+    public static void main(String[] args) {
+        Materia materia1 = new Materia("Física", 21, 3, "Rafael", "Santiago", "Juan" );
+        System.out.println("Información de Materia 1:\n");
+        System.out.println("Nombre: " + materia1.getNombre());
+        System.out.println("Código: " + materia1.getCodigo());
+        System.out.println("Número de Horas: " + materia1.getNumeroHoras());
+        System.out.println("Profesor 1: " + materia1.getProfesor1());
+
+
+        Estudiante estudiante =new Estudiante("1758241036", "Lorena", 123, "Fisica", "Calculo", "Comunicacion");
+        System.out.println("\nInformación del Estudiante:\n");
+        System.out.println("Nombre: " + estudiante.getNombre());
+        System.out.println("Cédula: " + estudiante.getCedula());
+        System.out.println("Código: " + estudiante.getCodigo());
+        System.out.println("Materia1: " + estudiante.getMateria1());
+        System.out.println("Materia2: " + estudiante.getMateria2());
+        System.out.println("Materia3: " + estudiante.getMateria3());
+
+        Profesor profesor1 = new Profesor("Rafael", "0963204185", 58);
+        profesor1.ingresarDatos();
+        System.out.println("Nombre del profesor: " + profesor1.getNombre());
+        System.out.println("Cédula del profesor: " + profesor1.getCedula());
+        System.out.println("Código del profesor: " + profesor1.getCodigoP());
+
+
+        Materia materia2 = new Materia("Calculo", 12, 3, "Rafael", "Santiago", "Juan" );
+        System.out.println("\nInformación de Materia 2:\n");
+        System.out.println("Nombre: " + materia2.getNombre());
+        System.out.println("Código: " + materia2.getCodigo());
+        System.out.println("Número de Horas: " + materia2.getNumeroHoras());
+        System.out.println("Profesor 2: " + materia2.getProfesor1());
+
+
+        Profesor profesor2 = new Profesor("Santiago", "1752498035", 25);
+        profesor2.ingresarDatos();
+        System.out.println("Nombre del profesor2: " + profesor2.getNombre());
+        System.out.println("Cédula del profesor2: " + profesor2.getCedula());
+        System.out.println("Código del profesor2: " + profesor2.getCodigoP());
+
+        Estudiante estudiante1= new Estudiante("1234567890", "Manuel", 125,  "Fisica", "Calculo", "Comunicacion" );
+
+        Materia materia3 = new Materia("Calculo", 31, 2, "Rafael", "Santiago", "Juan");
+        System.out.println("\nInformación de Materia 3:\n");
+        System.out.println("Nombre: " + materia3.getNombre());
+        System.out.println("Código: " + materia3.getCodigo());
+        System.out.println("Número de Horas: " + materia3.getNumeroHoras());
+        System.out.println("Profesor 3: " + materia3.getProfesor3());
+
+        Profesor profesor3 = new Profesor("Juan", "1396875240", 47);
+        profesor3.ingresarDatos();
+        System.out.println("Nombre del profesor3: " + profesor3.getNombre());
+        System.out.println("Cédula del profesor3: " + profesor3.getCedula());
+        System.out.println("Código del profesor3: " + profesor3.getCodigoP());
+
+
+
+    }
+}
