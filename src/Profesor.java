@@ -1,13 +1,9 @@
 public class Profesor {
     private String nombre;
     private int codigoP=0;
-    private int cedula=0;
+    private String  cedula="";
 
-    public Profesor(){
-
-    }
-
-    public Profesor(String nombre, int cedula, int codigoP) {
+    public Profesor(String nombre, String cedula, int codigoP) {
         this.nombre = nombre;
         this.codigoP = codigoP;
         this.cedula = cedula;
@@ -22,12 +18,10 @@ public class Profesor {
         this.nombre = nombre;
     }
 
-    public int getCedula() {
 
+    public String getCedula() {
         return cedula;
     }
-
-
 
     public int getCodigoP() {
         return codigoP;
@@ -38,11 +32,18 @@ public class Profesor {
     }
 
 
-    public void ingresarDatos () {
-        System.out.println("Ingrese el nombre del profesor1: ");
-        System.out.println("Ingrese el nombre del profesor2: ");
-        System.out.println("Ingrese el nombre del profesor3: ");
+    public void ingresarDatos() {
+        //System.out.println("Ingrese el nombre del profesor: ");
+        this.nombre = "Rafael";
+        //System.out.println("Ingrese la cédula del profesor: ");
+        this.cedula ="0963204185";
+        //System.out.println("Ingrese el código del profesor: ");
+        //this.codigoP = "58"
+    }
+
+    public void ingresarDatosp2() {
+        this.nombre = "Santiago";
+        this.cedula ="0963204185";
+        //this.codigoP = "58"
     }
 }
-
-
