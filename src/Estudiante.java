@@ -34,12 +34,7 @@ public class Estudiante {
         System.out.println("Ingrese el nombre del estudiante: ");
         System.out.println("Ingrese la cédula del estudiante: ");
         System.out.println("Ingrese el código del estudiante: ");
-        System.out.println("Ingrese el nombre del estudiante2: ");
-        System.out.println("Ingrese la cédula del estudiante2: ");
-        System.out.println("Ingrese el código del estudiante2: ");
-        System.out.println("Ingrese el nombre del estudiante3: ");
-        System.out.println("Ingrese la cédula del estudiante3: ");
-        System.out.println("Ingrese el código del estudiante3: ");
+         
     }
 
 
@@ -75,19 +70,7 @@ public class Estudiante {
         this.materia1 = materia1;
     }
 
-    public String getMateria2() {
-        return materia2;
+    
+
     }
 
-    public void setMateria2(String materia2) {
-        this.materia2 = materia2;
-    }
-
-    public String getMateria3() {
-        return materia3;
-    }
-
-    public void setMateria3(String materia3) {
-        this.materia3 = materia3;
-    }
-}
