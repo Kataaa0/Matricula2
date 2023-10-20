@@ -33,7 +33,7 @@ public class Main {
 
 
         Profesor profesor2 = new Profesor("Santiago", "1752498035", 25);
-        profesor2.ingresarDatos();
+        profesor2.ingresarDatosp2();
         System.out.println("Nombre del profesor2: " + profesor2.getNombre());
         System.out.println("Cédula del profesor2: " + profesor2.getCedula());
         System.out.println("Código del profesor2: " + profesor2.getCodigoP());
