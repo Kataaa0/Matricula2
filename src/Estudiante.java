@@ -1,60 +1,55 @@
 public class Estudiante {
-    private double cedula;
+    private String cedula;
     private String nombre;
-    private int codigo=0;
-    private String materia1="";
-    private String materia2="";
-    private String materia3="";
+    private int codigo;
+    private String materia1;
+    private String materia2;
+    private String materia3;
 
 
-    public Estudiante(double cedula, String nombre) {
-
-    }
 
 
-    public Estudiante(double cedula, String nombre, int codigo, String materia1, String materia2, String materia3) {
+    public Estudiante(String cedula, String nombre, int codigo, String materia1, String materia2, String materia3) {
         this.cedula = cedula;
         this.nombre = nombre;
-        this.codigo = codigo;
+        this.codigo= codigo;
         this.materia1 = materia1;
         this.materia2 = materia2;
         this.materia3 = materia3;
     }
-    public void imprimirMaterias(String nombreMateria) {
-        System.out.println("El nombre de la materia1 es: " +materia1);
-        System.out.println("El nombre de la materia2 es: " + materia2);
-        System.out.println("El nombre de la materia3 es: " +materia3);
-    }
-    public void imprimirProfesores() {
 
-        System.out.println("Nombre del profesor 1 de la Materia 1: ");
-        System.out.println("Nombre del profesor 2 de la Materia 2: " );
-        System.out.println("Nombre del profesor 3 de la Materia 3: " );
+    public void imprimirMaterias() {
+        System.out.println("Nombre de la materia 1: " + materia1);
+        System.out.println("Nombre de la materia 2: " + materia2);
+        System.out.println("Nombre de la materia 3: " + materia3);
     }
 
-
+    public void ingresarProfesores() {
+        System.out.println("Nombre del profesor de la materia 1: ");
+        System.out.println("Nombre del profesor de la materia 2: ");
+        System.out.println("Nombre del profesor de la materia 3: ");
+    }
 
     public void ingresarDatos() {
-
         System.out.println("Ingrese el nombre del estudiante: ");
-
-
+        System.out.println("Ingrese la cédula del estudiante: ");
+        System.out.println("Ingrese el código del estudiante: ");
+        System.out.println("Ingrese el nombre del estudiante2: ");
+        System.out.println("Ingrese la cédula del estudiante2: ");
+        System.out.println("Ingrese el código del estudiante2: ");
+        System.out.println("Ingrese el nombre del estudiante3: ");
+        System.out.println("Ingrese la cédula del estudiante3: ");
+        System.out.println("Ingrese el código del estudiante3: ");
     }
 
-    public double getCedula() {
-            return cedula;
-        }
-        public int getCodigo() {
-            return codigo;
-        }
 
-        public void setCodigo(int codigo) {
-            this.codigo = codigo;
-        }
+    public String getCedula() {
+        return cedula;
+    }
 
-        public void setCedula(double cedula) {
-            this.cedula = cedula;
-        }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
 
     public String getNombre() {
         return nombre;
@@ -62,6 +57,14 @@ public class Estudiante {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public String getMateria1() {
